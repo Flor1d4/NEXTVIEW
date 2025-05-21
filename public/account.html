@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Account - NextView</title>
+  <link rel="stylesheet" href="styles/style.css" />
+</head>
+<body>
+
+  <div class="account-container">
+    <h2>Welcome, <span id="username">User</span>!</h2>
+    <p>Your email: <span id="email">user@example.com</span></p>
+
+    <button id="logout" class="btn border">Logout</button>
+  </div>
+
+  <script>
+    const user = JSON.parse(localStorage.getItem("nextview_user"));
+
+    if (!user) {
+      window.location.href = "login.html"; // redirect if not logged in
+    } else {
+      document.getElementById("username").textContent = user.username;
+      document.getElementById("email").textContent = user.email;
+    }
+
+    document.getElementById("logout").addEventListener("click", () => {
+      localStorage.removeItem("nextview_user");
+      window.location.href = "login.html";
+    });
+  </script>
+<a href="support.html" class="support-bubble"> Need any help❓</a>
+
+</body>
+</html>
