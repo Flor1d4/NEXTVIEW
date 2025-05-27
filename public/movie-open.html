@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="ru">
 <head>
+  <link rel="stylesheet" href="https://cdn.plyr.io/3.7.8/plyr.css" />
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Movie Page - NextView</title>
@@ -9,7 +10,7 @@
 <body onload="loadMovie()">
 
   <!-- Header -->
-  <header class="header">
+  <!-- <header class="header">
     <div class="logo">
         <img src="img/logo.jpg" alt="NextView Logo" />
       </div>
@@ -21,30 +22,30 @@
       <a href="favourites.html">Favourites</a>
       <a href="about.html">About</a>
     </nav>
-  </header>
+  </header> -->
 
   <!-- Movie Content -->
-  <section class="section" style="margin-top: 100px;">
+  <!-- <section class="section" style="margin-top: 100px;"> -->
     <div class="movie-open">
-      <h1 id="movie-title">Movie Title</h1>
+      <!-- <h1 id="movie-title">Movie Title</h1>
       <img id="movie-img" src="" alt="Movie Poster" style="max-width: 300px; border-radius: 10px;">
-      <p id="movie-description" style="max-width: 600px; margin: 20px 0;"></p>
+      <p id="movie-description" style="max-width: 600px; margin: 20px 0;"></p> -->
 
-      <video width="1024" controls style="margin-top: 20px;">
-        <source src="img/sample-video.mp4" type="video/mp4">
+      <video class="full-video" playsinline controls>
+        <source src="https://palmerpage.com/jonas/jaws.mp4" type="video/mp4">
         Your browser does not support the video tag.
       </video>
 
-      <div class="hero-buttons" style="margin-top: 20px;">
+      <!-- <div class="hero-buttons" style="margin-top: 20px;">
         <button class="btn green">Watch</button>
         <button class="btn" onclick="addToFavourites()">🖤 Add to Favourites</button>
         <button class="btn">Download</button>
         <button class="btn">Share</button>
-      </div>
+      </div> -->
     </div>
-  </section>
+  <!-- </section> -->
 <!-- Footer -->
-<footer class="custom-footer">
+<!-- <footer class="custom-footer">
     <div class="footer-content">
       <div class="footer-text">
         <p>Our platform is trusted by millions &<br>features best updated movies all<br>around the world.</p>
@@ -69,7 +70,7 @@
         <p class="footer-copy">© 2025</p>
       </div>
     </div>
-  </footer>
+  </footer> -->
   
   <script>
     function loadMovie() {
@@ -96,7 +97,18 @@
     }
     
   </script>
-  
+  <script src="https://cdn.plyr.io/3.7.8/plyr.polyfilled.js"></script>
+<script>
+  const player = new Plyr('#custom-video', {
+    fullscreen: { enabled: true }, // отключаем fullscreen
+    controls: [
+      'play', 'progress', 'current-time', 'mute', 'volume', 'settings'
+    ],
+    theme: {
+      primary: '#10b981' // зелёная прогресс-полоса
+    }
+  });
+</script>
 <script src="scripts/coursor.js"></script>
 <script src="scripts/movie.js"></script>
 </body>
