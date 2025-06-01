@@ -721,3 +721,170 @@ body::-webkit-scrollbar {
   object-fit: cover;
   
 }
+
+/* user acc on logged in */
+.user-panel {
+  position: relative;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.avatar {
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  border: 2px solid white;
+  cursor: pointer;
+}
+
+.arrow {
+  font-size: 20px;
+  color: white;
+  cursor: pointer;
+}
+
+.dropdown {
+  position: absolute;
+  top: 50px;
+  right: 0;
+  background: rgba(20, 20, 20, 0.95);
+  border-radius: 10px;
+  padding: 10px 0;
+  min-width: 180px;
+  display: flex;
+  flex-direction: column;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.3);
+  z-index: 999;
+}
+
+.dropdown a {
+  padding: 12px 20px;
+  color: white;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  transition: background 0.3s;
+}
+
+.dropdown a:hover {
+  background-color: #222;
+}
+
+.hidden {
+  display: none;
+}
+
+
+/* account settings */
+
+/* === Контейнер всей страницы аккаунта === */
+.account-settings-container {
+  max-width: 800px;
+  margin: 100px auto;
+  padding: 40px;
+  background-color: #141414; /* тёмный фон */
+  border-radius: 12px;
+  color: #eee;
+  box-shadow: 0 0 30px rgba(0,0,0,0.5);
+  font-family: 'Arial', sans-serif;
+}
+
+/* === Блок с аватаром и именем === */
+.account-header {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  margin-bottom: 30px;
+}
+
+.account-header img {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 2px solid #10b981;
+  box-shadow: 0 0 8px rgba(16,185,129,0.6);
+}
+
+.account-header h2 {
+  margin: 0;
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.account-info p {
+  margin: 6px 0;
+  font-size: 15px;
+  color: #ccc;
+}
+
+/* === Блоки настроек === */
+.account-actions {
+  margin-top: 30px;
+}
+
+.account-actions h3 {
+  margin-bottom: 10px;
+  color: #10b981;
+  font-size: 17px;
+}
+
+.account-actions input {
+  padding: 10px 12px;
+  border: none;
+  width: 100%;
+  margin-bottom: 12px;
+  border-radius: 5px;
+  background-color: #222;
+  color: #fff;
+  font-size: 14px;
+}
+
+.account-actions input:focus {
+  outline: 2px solid #10b981;
+}
+
+/* === Кнопки === */
+.account-actions .btn {
+  width: 100%;
+  margin-top: 12px;
+  padding: 10px;
+  border-radius: 6px;
+  background-color: #10b981;
+  border: none;
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.account-actions .btn:hover {
+  background-color: #059669;
+}
+
+/* === Кнопка Danger (Удаление) === */
+.btn.danger {
+  background-color: #b30000;
+}
+
+.btn.danger:hover {
+  background-color: #ff1a1a;
+}
+
+/* === Ссылка Logout === */
+.logout-link {
+  text-align: center;
+  margin-top: 25px;
+}
+
+.logout-link a {
+  color: #bbb;
+  text-decoration: underline;
+  transition: color 0.3s;
+}
+
+.logout-link a:hover {
+  color: #fff;
+}

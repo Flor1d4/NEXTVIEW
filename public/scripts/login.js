@@ -14,7 +14,9 @@ document.getElementById("login-form").addEventListener("submit", async (e) => {
   
     const data = await response.json();
     const msg = document.getElementById("login-message");
-  
+  localStorage.setItem("nextview_user", JSON.stringify(data.user));
+window.location.href = "index-loggedin.html";
+
     if (response.ok) {
       msg.textContent = "Login successful! Redirecting...";
       localStorage.setItem("nextview_user", JSON.stringify(data.user));
