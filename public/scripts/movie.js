@@ -1,10 +1,8 @@
-// Сохраняет данные и переходит на страницу фильма
+
 function openMoviePage(title, img, description) {
   localStorage.setItem("selectedMovie", JSON.stringify({ title, img, description }));
   window.location.href = "movie.html";
 }
-
-// Когда movie.html загружается — вставляем данные
 document.addEventListener("DOMContentLoaded", () => {
   const movie = JSON.parse(localStorage.getItem("selectedMovie"));
   if (movie) {
