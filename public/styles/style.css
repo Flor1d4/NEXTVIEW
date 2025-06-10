@@ -51,7 +51,7 @@ body {
   bottom: 0;
   left: 0;
   width: 100%;
-  height: 100px; /* можно настроить высоту градиента */
+  height: 100px; 
   background: linear-gradient(to bottom, rgba(0, 0, 0, 0) 0%, #0D0C0F 100%);
   z-index: 1;
 }
@@ -74,7 +74,7 @@ body {
 }
 
 .arrow-link:hover {
-  color: #10b981; /* зелёный при наведении */
+  color: #10b981; 
 }
 
 
@@ -345,12 +345,12 @@ body {
 .carousel-title {
   font-size: 20px;
   margin-bottom: 20px;
-  text-align: center;  /* убрать padding-left, сделать по центру */
+  text-align: center;  
 }
 
 /* Wrapper */
 .logo-carousel-wrapper {
-  display: flex; /* ДОБАВИТЬ */
+  display: flex;
   align-items: center;
   justify-content: center;
   gap: 10px;
@@ -374,18 +374,18 @@ body {
 .logo-card {
   flex: 0 0 auto;
   padding: 28px 36px;
-  background-color: #000000; /* чёрный фон */
-  border-radius: 10px;     /* скругление */
+  background-color: #000000; 
+  border-radius: 10px;     
   display: flex;
   align-items: center;
   justify-content: center;
   transition: transform 0.3s ease, background-color 0.3s ease;
-  box-shadow: 0 0 5px rgba(0, 0, 0, 0.3); /* лёгкая тень */
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
   cursor: pointer;
 }
 .logo-card:hover {
   transform: scale(1.05);
-  background-color: #222; /* светлее при наведении */
+  background-color: #222; 
 }
 .logo-card img {
   max-height: 60px;
@@ -605,7 +605,7 @@ body::-webkit-scrollbar {
   position: absolute;
   width: 80px;
   height: 80px;
-  background: rgba(16, 185, 129, 0.4); /* зелёный с прозрачностью */
+  background: rgba(16, 185, 129, 0.4); 
   border-radius: 50%;
   transform: translate(-50%, -50%);
   pointer-events: none;
@@ -784,7 +784,7 @@ body::-webkit-scrollbar {
   max-width: 800px;
   margin: 100px auto;
   padding: 40px;
-  background-color: #141414; /* тёмный фон */
+  background-color: #141414; 
   border-radius: 12px;
   color: #eee;
   box-shadow: 0 0 30px rgba(0,0,0,0.5);
@@ -887,4 +887,55 @@ body::-webkit-scrollbar {
 
 .logout-link a:hover {
   color: #fff;
+}
+
+/* Search all for*/
+.card-search {
+  width: 150px; 
+  margin: 10px;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+
+.card-image-container-search {
+  width: 100%;
+  height: 250px; 
+  overflow: hidden;
+}
+
+.movie-poster-search {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; 
+  transition: transform 0.3s ease;
+}
+
+.movie-poster-search:hover {
+  transform: scale(1.05); 
+}
+
+.movie-title-search {
+  margin: 10px 0 5px;
+  font-weight: bold;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+
+
+.search-input {
+  
+  background-color: rgba(255, 255, 255, 0.2);
+  border-radius: 20px;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  padding: 10px 15px;
+  color: white;
+  font-size: 16px;
+  transition: all 0.3s ease;
+  outline: none;
+   width: 180px;          
+  height: 28px;         
+  padding: 4px 12px;     
 }

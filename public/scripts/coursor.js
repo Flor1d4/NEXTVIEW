@@ -7,7 +7,6 @@ document.addEventListener("mousemove", (e) => {
   ring.style.left = `${e.clientX}px`;
 });
 
-// Отслеживаем наведение на кликабельные элементы
 document.addEventListener("mouseover", (e) => {
   if (
     e.target.tagName === "A" ||

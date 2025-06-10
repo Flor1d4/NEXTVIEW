@@ -19,14 +19,13 @@
       <a href="index.html" class="active">Home</a>
       <a href="movies.html">Movies</a>
       <a href="series.html">Series</a>
-      <a href="favourites.html">Favourites</a>
+      <!-- <a href="favourites.html">Favourites</a> -->
       <a href="about.html">About</a>
     </nav>
     
     <div class="auth-buttons">
       <a href="#" onclick="openPopup('signup-popup')" class="btn border">Sign Up</a>
-      <a href="#" onclick="openPopup('login-popup')" class="btn light">Login</a>
-      
+      <a href="#" onclick="openPopup('login-popup')" class="btn light">Login</a>  
     </div>
   </header>
 
@@ -135,7 +134,7 @@
         </div>
       </div>
 
-      <div class="card"><img src="img/cover3.jpg" alt="">
+      <div class="card"><img src="img/cover3.jpg" alt=""onclick="openMoviePage1('Spree', 'img/cover3.jpg', '')">
         <p>Spree</p>
         <div class="movie-rating">
         <span class="star">★</span>
@@ -144,7 +143,7 @@
         </div>
       </div>
 
-      <div class="card"><img src="img/cover4.jpg" alt="">
+      <div class="card"><img src="img/cover4.jpg" alt=""onclick="openMoviePage2('Jocker', 'img/cover4.jpg', '')">
         <p>Joker</p>
         <div class="movie-rating">
         <span class="star">★</span>
@@ -153,7 +152,7 @@
         </div>
       </div>
 
-      <div class="card"><img src="img/cover5.jpg" alt="">
+      <div class="card"><img src="img/cover5.jpg" alt=""onclick="openMoviePageEmpty()">
         <p>Black k Klansman</p>
         <div class="movie-rating">
         <span class="star">★</span>
@@ -162,7 +161,7 @@
         </div>
       </div>
 
-      <div class="card"><img src="img/cover6.jpg" alt="">
+      <div class="card"><img src="img/cover6.jpg" alt=""onclick="openMoviePageEmpty()">
         <p>Top Gun Maverick</p>
         <div class="movie-rating">
         <span class="star">★</span>
@@ -176,9 +175,8 @@
   <!-- Featured -->
   <section class="section dark">
     <h2>Featured in NextView</h2>
-
     <div class="grid">
-      <div class="card"><img src="img/featured1.jpg" alt=""><p>Top Gun Maverick</p>
+      <div class="card"><img src="img/featured1.jpg" alt=""onclick="openMoviePageEmpty()"><p>Top Gun Maverick</p>
        <div class="movie-rating">
         <span class="star">★</span>
         <span class="score">4.6</span>
@@ -186,7 +184,7 @@
         </div>
       </div>
 
-      <div class="card"><img src="img/featured2.jpg" alt=""><p>Joker</p>
+      <div class="card"><img src="img/featured2.jpg" alt=""onclick="openMoviePageEmpty()"><p>Joker</p>
        <div class="movie-rating">
         <span class="star">★</span>
         <span class="score">4.6</span>
@@ -194,7 +192,7 @@
         </div>
       </div>
 
-      <div class="card"><img src="img/featured3.jpg" alt=""><p>Black k Klansman</p>
+      <div class="card"><img src="img/featured3.jpg" alt=""onclick="openMoviePageEmpty()"><p>Black k Klansman</p>
        <div class="movie-rating">
         <span class="star">★</span>
         <span class="score">4.6</span>
@@ -209,24 +207,24 @@
     <h2>Movies</h2>
     <div class="grid">
       <div class="card">
-        <img src="img/movie1.jpg" alt="Movie 1">
+        <img src="img/movie1.jpg" alt="Movie 1"onclick="openMoviePageEmpty()">
         <h3>Top Gun Maverick</h3>
-        <button class="btn" onclick="addToFavourites('Top Gun Maverick', 'img/movie1.jpg')">🖤 Add to Favourites</button>
+        <!-- <button class="btn" onclick="addToFavourites('Top Gun Maverick', 'img/movie1.jpg')">🖤 Add to Favourites</button> -->
       </div>
       <div class="card">
-        <img src="img/movie2.jpg" alt="Movie 2">
+        <img src="img/movie2.jpg" alt="Movie 2"onclick="openMoviePageEmpty()">
         <h3>Spider Man</h3>
-        <button class="btn" onclick="addToFavourites('Spider Man', 'img/movie2.jpg')">🖤 Add to Favourites</button>
+        <!-- <button class="btn" onclick="addToFavourites('Spider Man', 'img/movie2.jpg')">🖤 Add to Favourites</button> -->
       </div>
       <div class="card">
-        <img src="img/movie3.jpg" alt="Movie 3">
+        <img src="img/movie3.jpg" alt="Movie 3"onclick="openMoviePageEmpty()">
         <h3>Black Panther: Wakanda Forever</h3>
-        <button class="btn" onclick="addToFavourites('Black Panther: Wakanda Forever', 'img/movie3.jpg')">🖤 Add to Favourites</button>
+        <!-- <button class="btn" onclick="addToFavourites('Black Panther: Wakanda Forever', 'img/movie3.jpg')">🖤 Add to Favourites</button> -->
       </div>
     </div>
   </section>
 
-  <!-- Footer -->
+  
   <!-- Footer -->
 <footer class="custom-footer">
   <div class="footer-content">
@@ -235,16 +233,16 @@
       <div class="footer-links">
         <a href="privacy.html">Privacy policy</a>
         <a href="terms.html">Term of service</a>
-        <a href="#">Language</a>
+        <!-- <a href="#">Language</a> -->
       </div>
     </div>
     <div class="footer-nav-social">
-      <nav class="footer-nav">
+      <!-- <nav class="footer-nav">
         <a href="index.html">Home</a> /
         <a href="#">Discover</a> /
         <a href="#">Influence</a> /
         <a href="#">Release</a>
-      </nav>
+      </nav> -->
       <div class="footer-social">
         <a href="#"><img src="img/instagram.png" alt="Instagram" /></a>
         <a href="#"><img src="img/facebook.png" alt="Facebook" /></a>
@@ -254,6 +252,9 @@
     </div>
   </div>
 </footer>
+
+
+
 
 <script src="scripts/coursor.js"></script>
   <script src="scripts/popup.js"></script>
@@ -293,7 +294,7 @@
     const carousel = document.getElementById("logo-carousel");
     const firstCard = carousel.querySelector(".logo-card");
     if (firstCard) {
-      carousel.appendChild(firstCard); // отправляем первый элемент в конец
+      carousel.appendChild(firstCard); 
     }
   }
 
@@ -302,11 +303,33 @@
     const cards = carousel.querySelectorAll(".logo-card");
     const lastCard = cards[cards.length - 1];
     if (lastCard) {
-      carousel.insertBefore(lastCard, cards[0]); // перемещаем последний в начало
+      carousel.insertBefore(lastCard, cards[0]); 
     }
   }
 </script>
 
+<script>
+  function openMoviePage1(title, img, description) {
+    const movieData = { title, img, description };
+    localStorage.setItem("nextview_selectedMovie", JSON.stringify(movieData));
+    window.location.href = "movie-open-spree.html";
+  }
+</script>
 
+
+<script>
+  function openMoviePage2(title, img, description) {
+    const movieData = { title, img, description };
+    localStorage.setItem("nextview_selectedMovie", JSON.stringify(movieData));
+    window.location.href = "movie-open-jocker.html";
+  }
+</script>
+<script>
+  function openMoviePageEmpty(title, img, description) {
+    const movieData = { title, img, description };
+    localStorage.setItem("nextview_selectedMovie", JSON.stringify(movieData));
+    window.location.href = "movie-open-empty.html";
+  }
+</script>
 </body>
 </html>
