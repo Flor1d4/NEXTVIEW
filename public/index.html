@@ -25,8 +25,7 @@
     
     <div class="auth-buttons">
       <a href="#" onclick="openPopup('signup-popup')" class="btn border">Sign Up</a>
-      <a href="#" onclick="openPopup('login-popup')" class="btn light">Login</a>
-      
+      <a href="#" onclick="openPopup('login-popup')" class="btn light">Login</a>  
     </div>
   </header>
 
@@ -176,7 +175,6 @@
   <!-- Featured -->
   <section class="section dark">
     <h2>Featured in NextView</h2>
-
     <div class="grid">
       <div class="card"><img src="img/featured1.jpg" alt=""><p>Top Gun Maverick</p>
        <div class="movie-rating">
@@ -226,7 +224,7 @@
     </div>
   </section>
 
-  <!-- Footer -->
+  
   <!-- Footer -->
 <footer class="custom-footer">
   <div class="footer-content">
@@ -254,6 +252,9 @@
     </div>
   </div>
 </footer>
+
+
+
 
 <script src="scripts/coursor.js"></script>
   <script src="scripts/popup.js"></script>
@@ -293,7 +294,7 @@
     const carousel = document.getElementById("logo-carousel");
     const firstCard = carousel.querySelector(".logo-card");
     if (firstCard) {
-      carousel.appendChild(firstCard); // отправляем первый элемент в конец
+      carousel.appendChild(firstCard); 
     }
   }
 
@@ -302,7 +303,7 @@
     const cards = carousel.querySelectorAll(".logo-card");
     const lastCard = cards[cards.length - 1];
     if (lastCard) {
-      carousel.insertBefore(lastCard, cards[0]); // перемещаем последний в начало
+      carousel.insertBefore(lastCard, cards[0]); 
     }
   }
 </script>
