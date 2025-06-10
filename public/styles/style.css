@@ -926,29 +926,16 @@ body::-webkit-scrollbar {
 
 
 .search-input {
-  /* Прозрачный фон с лёгкой подложкой */
+  
   background-color: rgba(255, 255, 255, 0.2);
-  
-  /* Закруглённые углы */
   border-radius: 20px;
-  
-  /* Стили границы */
   border: 1px solid rgba(255, 255, 255, 0.3);
-  
-  /* Отступы внутри поля */
   padding: 10px 15px;
-  
-  /* Текст */
   color: white;
   font-size: 16px;
-  
-  /* Анимация при фокусе */
   transition: all 0.3s ease;
-  
-  /* Убираем стандартный outline */
   outline: none;
-  
-   width: 180px;          /* Уменьшенная ширина */
-  height: 28px;          /* Компактная высота */
-  padding: 4px 12px;     /* Минимальные отступы */
+   width: 180px;          
+  height: 28px;         
+  padding: 4px 12px;     
 }
